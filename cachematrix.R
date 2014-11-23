@@ -72,7 +72,7 @@ makeCacheMatrix <- function(x = matrix())
 
 cacheSolve <- function(x, ...)
 {
-        ## If cachedInv from matrix x is not NA, inverse matrix has been cached and can be returned
+        ## If cachedInv from matrix x is not NULL, inverse matrix has been cached and can be returned
         if(!is.null(x$getinverse()))
         {
                 message("Inverse Matrix has been cached before. Now retrieving...")
